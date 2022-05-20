@@ -12,6 +12,7 @@ function QR() {
     document.getElementById("galeria").style.display = "none";
     document.getElementById("invierta").style.display = "none";
     document.getElementById("invierta2").style.display = "none";
+    document.getElementById("mapa").style.display = "none";
     conta=0;
     contador=2;
 }
@@ -37,6 +38,7 @@ function servicios() {
     document.getElementById("galeria").style.display = "none";
     document.getElementById("invierta").style.display = "none";
     document.getElementById("screen4").style.display = "none";
+    document.getElementById("mapa").style.display = "none";
     conta=0;
     contador=1;
 }
@@ -142,6 +144,26 @@ function inver2(){
     
 }
 
+function mapa() {
+    document.getElementById("mapa").style.display = "block";
+    document.getElementById("screen4").style.display = "none";
+    document.getElementById("portafolio").style.display = "none";
+    document.getElementById("objetivos").style.display = "none";
+    document.getElementById("side").style.display = "none";
+    document.getElementById("crt").style.display = "none";
+    document.getElementById("promo").style.display = "none";
+    document.getElementById("respon").style.display = "none";
+    document.getElementById("galeria").style.display = "none"; 
+    document.getElementById("invierta").style.display = "none";
+    document.getElementById("invierta2").style.display = "none";
+    document.getElementById("informacion").style.display = "none";
+    document.getElementById("back").style.display = "block";
+
+    conta=0;
+    contador=2;
+    
+}
+
 function contactar() {
     document.getElementById("screen4").style.display = "block";
     document.getElementById("portafolio").style.display = "none";
@@ -153,6 +175,8 @@ function contactar() {
     document.getElementById("galeria").style.display = "none"; 
     document.getElementById("invierta").style.display = "none";
     document.getElementById("invierta2").style.display = "none";
+    document.getElementById("mapa").style.display = "none";
+    document.getElementById("back").style.display = "block";
     conta=0;
     contador=2;
     
@@ -186,6 +210,7 @@ function back() {
         document.getElementById("invierta").style.display = "none";
         document.getElementById("invierta2").style.display = "none";
         document.getElementById("back").style.display = "none";
+        document.getElementById("mapa").style.display = "none";
         contador=1;
 
     }
@@ -333,52 +358,6 @@ document.querySelector('.side')
       next();
   },4000);   
   
-         // slider2
-
-    
- const slider2 = document.querySelector("#slider2");
- let sliderSection2 = document.querySelectorAll(".slider__section2");
- let sliderSectionlast2 = sliderSection2[sliderSection2.length -1];
- 
- const btnLeft2 = document.querySelector("#btn-left2");
- const btnRight2 = document.querySelector("#btn-rigth2");
- 
- slider2.insertAdjacentElement('afterbegin', sliderSectionlast2);
- 
- function next2 (){
-     let sliderSectionFirst2 = document.querySelectorAll(".slider__section2")[0];
-     slider2.style.marginLeft = "-200%";
-     slider2.style.transition = "all 0.5s";
-     setTimeout(function(){
-         slider2.style.transition = "none";
-         slider2.insertAdjacentElement('beforeend', sliderSectionFirst2);
-         slider2.style.marginLeft = "-100%";
-     }, 500);  
- }
- 
- function Prev2 (){
-     let sliderSection2 = document.querySelectorAll(".slider__section2");
-     let sliderSectionLast2 = sliderSection2[sliderSection2.length -1];
-     slider2.style.marginLeft = "0";
-     slider2.style.transition = "all 0.5s";
-     setTimeout(function(){
-         slider2.style.transition = "none";
-         slider2.insertAdjacentElement('afterbegin', sliderSectionLast2);
-         slider2.style.marginLeft = "-100%";
-     }, 500);  
- }
- 
- btnRight2.addEventListener('click', function(){
-     next2();
- });
- 
- btnLeft2.addEventListener('click', function(){
-     Prev2();
- });
- 
- setInterval(function(){
-     next2();
- },5000);  
 
          
            
