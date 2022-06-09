@@ -130,16 +130,39 @@ lottie-player {
 }
 
 
-
-.atras{
-	color: #000634;
-	font-size: 12px;
+.atraspt{
 	text-align: right;
-	margin: 0px 12px;
-	display: block;
+}
+
+.atraspt span{
+	color: #0d5687;
+	font-size: 12px;
 }
 
 
+.atraspt .atras{
+	color: #0d5687;
+	font-size: 14px;
+	margin: 0px 12px;
+	display: inline-block;
+	text-decoration: none;
+	background: #ffffff6c;
+	padding: 4px 7px;
+	border-radius: 5px;
+	font-weight: bold;
+	box-shadow: 1px 1px 5px #000000c4;
+
+
+}
+
+.atraspt .atras:hover{
+	background: #ffffff00;
+	color: #0d5687;
+	box-shadow: 1px 1px 5px #ffffff;
+	border: solid 2px rgb(255, 255, 255);
+	font-weight: 200;
+    transition-duration: .3s;
+}
 
 /* ----- ----- inicio informacion ----- ----- */
 .informacion {
@@ -339,7 +362,7 @@ lottie-player {
 	text-align: center;
 }
 
-.objetivos p span {
+.objetivos p .numerospf {
 	color: #0d5687;
 	font-weight: bold;
 	font-size: 20px;
@@ -602,6 +625,77 @@ lottie-player {
 	right: 20px;
 }
 
+/* ----- nuevogaleria-- ----- */
+
+.products{
+    /* margin-top: 60px; */
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts{
+    width: 155px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+	border-radius: 5px;
+
+}
+.carts img{
+    width: 100%;
+}
+.carts p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 10px;
+	font-size: 13px;
+	
+}
+
+/* colorprecio */
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+	
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+
+    text-decoration: none;
+    background: rgba(0, 110, 255, 0.579);
+    padding: 9px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+	border-radius: 5px;
+
+  
+}
+
+.carts a:hover{
+    background: rgba(255, 255, 255, 0.027);
+    color: rgb(0, 110, 255);
+    border: solid 2px rgb(0, 255, 26);
+	font-weight: 200;
+    transition-duration: .3s;
+}
+/* .carts a:hover + .cart-products{
+    display: block;
+} */
+/*float cart*/
+.cart-products .item img{
+    width: 115px;
+}
+
 
 
 
@@ -621,7 +715,7 @@ lottie-player {
 
 @media screen  and  (min-width: 800px){
 	.invierta .cuadro { 
-		width: 70%;
+		width: 90%;
 	}
 }
 
@@ -941,6 +1035,7 @@ footer .rango {
 	background: rgba(255, 255, 255, 0.97);
 	border-radius: 10px;
   }
+
   
   .imgLogo {
 	width: 20%;
